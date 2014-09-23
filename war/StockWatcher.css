@@ -1,0 +1,55 @@
+/** Add css rules here for your application. */
+
+
+/** Example rules used by the template application (remove for your app) */
+body{
+	padding: 10px;
+}
+
+/*stock list header row - makes top row with blue background*/
+.watchListHeader{
+	background-color:#2062B8;
+	color:white;
+	font-style:italic;
+}
+
+/* stock list flex table - puts grey border around everything*/
+.watchList{
+	border: 1px solid silver;
+	padding: 2px;
+	margin-bottom: 6px;
+}
+
+/*stock list Price and Change fields - makes the columns wide*/
+.watchListNumericColumn{
+	text-align:right;
+	width: 8em;
+}
+
+/*stock list Remove column - gets center when a new stock is listed*/
+.watchListRemoveColumn {
+  text-align: center;
+}
+
+/*add stock panel*/
+.addPanel{
+	margin: 10px 0px 15px 0px;
+}
+
+/*stock list, the Remove button*/
+.gwt-Button-remove {
+	width: 50px;
+}
+
+/*Dynamic color change for the Change field*/
+.noChange{
+	color:black;
+}
+
+.positiveChange{
+	color:green;
+}
+
+.negativeChange{
+	color:red;
+}

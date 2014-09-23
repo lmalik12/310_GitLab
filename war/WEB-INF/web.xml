@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee Description	Resource	Path	Location	Type
+The file war/WEB-INF/lib/appengine-endpoints.jar has a different size than App Engine SDK library appengine-endpoints.jar; perhaps it is a different version?	appengine-endpoints.jar	/GitLab/war/WEB-INF/lib	Unknown	Google App Engine Problem
+The file war/WEB-INF/lib/gwt-servlet.jar has a different size than GWT SDK library gwt-servlet.jar; perhaps it is a different version?	gwt-servlet.jar	/GitLab/war/WEB-INF/lib	Unknown	Google Web Toolkit Problem
+The file war/WEB-INF/lib/appengine-endpoints-deps.jar has a different size than App Engine SDK library appengine-endpoints-deps.jar; perhaps it is a different version?	appengine-endpoints-deps.jar	/GitLab/war/WEB-INF/lib	Unknown	Google App Engine Problem
+The App Engine SDK JAR appengine-api-1.0-sdk-1.9.10.jar is missing in the WEB-INF/lib directory	lib	/GitLab/war/WEB-INF	Unknown	Google App Engine Problem
+The App Engine SDK JAR appengine-jsr107cache-1.9.10.jar is missing in the WEB-INF/lib directory	lib	/GitLab/war/WEB-INF	Unknown	Google App Engine Problem
+The file war/WEB-INF/lib/appengine-api-labs.jar has a different size than App Engine SDK library appengine-api-labs.jar; perhaps it is a different version?	appengine-api-labs.jar	/GitLab/war/WEB-INF/lib	Unknown	Google App Engine Problem
+
+              http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5"
+         xmlns="http://java.sun.com/xml/ns/javaee">
+
+  <!-- Servlets -->
+	<servlet>
+		<servlet-name>loginService</servlet-name>
+		<servlet-class>com.google.gwt.sample.stockwatcher.server.LoginServiceImpl
+		</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>stockService</servlet-name>
+		<servlet-class>com.google.gwt.sample.stockwatcher.server.StockServiceImpl
+		</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>loginService</servlet-name>
+		<url-pattern>/stockwatcher/login</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>stockService</servlet-name>
+		<url-pattern>/stockwatcher/stock</url-pattern>
+	</servlet-mapping>
+  
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>StockWatcher.html</welcome-file>
+  </welcome-file-list>
+
+</web-app>
